@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+<h2>Names Of People Table</h2>
+
+<form id="Search">
+    <input type="text" id="searchTerms">
+</form>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor = db.getPeople(1000, sortType, searchTerms)>
+        <td>{{ Name }}</td>
+        <td>{{ Email }}</td>
+        <td>{{ Phone }}</td>
+    </tr>
+</table>
+
+<button id="PhoneSort" *ngClick - sortType = "Phone"> Sort by Phone</button>
+<button id="EmailSort" *ngClick - sortType = "Email">Sort by Email</button>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+[LinkedInAPI]
+client = 86em27cz9wxpkj
+secret = 7U2QJpr0Qj1Lngzw
